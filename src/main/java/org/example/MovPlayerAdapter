@@ -1,0 +1,22 @@
+public class MovPlayerAdapter implements AdvancedVideoPlayer {
+    private MovPlayer movPlayer;
+
+    public MovPlayerAdapter(MovPlayer player) {
+        this.movPlayer = player;
+    }
+
+    @Override
+    public void play(String fileName) {
+        movPlayer.playMov(fileName);
+    }
+
+    @Override
+    public void stop() {
+        movPlayer.stopMov();
+    }
+
+    @Override
+    public void rewind() {
+        movPlayer.rewindMov();
+    }
+}
