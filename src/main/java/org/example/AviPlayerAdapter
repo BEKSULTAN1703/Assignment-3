@@ -1,0 +1,12 @@
+public class AviPlayerAdapter implements VideoPlayer {
+    private AviPlayer aviPlayer;
+
+    public AviPlayerAdapter(AviPlayer player) {
+        this.aviPlayer = player;
+    }
+
+    @Override
+    public void play(String fileName) {
+        aviPlayer.playAvi(fileName);
+    }
+}
