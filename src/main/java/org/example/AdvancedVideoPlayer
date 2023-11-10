@@ -1,0 +1,4 @@
+public interface AdvancedVideoPlayer extends VideoPlayer {
+    void stop();
+    void rewind();
+}
