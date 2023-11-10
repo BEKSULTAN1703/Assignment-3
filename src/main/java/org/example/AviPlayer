@@ -1,0 +1,5 @@
+public class AviPlayer {
+    public void playAvi(String fileName) {
+        System.out.println("Playing AVI file: " + fileName);
+    }
+}
