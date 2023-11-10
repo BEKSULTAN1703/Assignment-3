@@ -1,1 +1,17 @@
-# Assignment-3
+public class Main {
+    public static void main(String[] args) {
+        // Создание и использование MP4 адаптера
+        VideoPlayer mp4Player = new Mp4PlayerAdapter(new Mp4Player());
+        mp4Player.play("movie.mp4");
+
+        // Создание и использование AVI адаптера
+        VideoPlayer aviPlayer = new AviPlayerAdapter(new AviPlayer());
+        aviPlayer.play("video.avi");
+
+        // Создание и использование MOV адаптера с расширенными функциями
+        AdvancedVideoPlayer movPlayer = new MovPlayerAdapter(new MovPlayer());
+        movPlayer.play("clip.mov");
+        movPlayer.stop();
+        movPlayer.rewind();
+    }
+}
