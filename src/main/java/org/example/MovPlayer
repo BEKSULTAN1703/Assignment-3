@@ -1,0 +1,13 @@
+public class MovPlayer {
+    public void playMov(String fileName) {
+        System.out.println("Playing MOV file: " + fileName);
+    }
+
+    public void stopMov() {
+        System.out.println("Stopping MOV file.");
+    }
+
+    public void rewindMov() {
+        System.out.println("Rewinding MOV file.");
+    }
+}
